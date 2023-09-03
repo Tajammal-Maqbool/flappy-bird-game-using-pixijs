@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Fuse - Flappy Bird</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+
+
+    <link rel="stylesheet" href="./src/styles/main.css" />
+
+    <script src="https://cdn.jsdelivr.net/gh/game-fuse/game-fuse-js@main/gameFuseFull.min.js"></script>
+</head>
+
+<body>
+    <div id="menu" style="display: flex;">
+        <h1 id="heading">
+            Flappy Bird
+        </h1>
+        <div id="signupMenu" style="display: none;">
+            <input id="signupEmail" placeholder="Email" type="email">
+            <input id="signupUsername" placeholder="Username" type="text">
+            <input id="signupPassword" placeholder="Password" type="password">
+            <input id="signupConfirmPassword" placeholder="Confirm Password" type="password">
+            <button id="signupButton">Sign Up</button>
+            <span style="font-size: 28px; margin-top: 10px;">or</span>
+            <p class="otherPageLink">
+                Already have an account then
+                <button id="signinLink">Sign In</button>
+            </p>
+        </div>
+        <div id="signinMenu" style="display: flex;">
+            <input id="signinEmail" placeholder="Email" type="email">
+            <input id="signinPassword" placeholder="Password" type="password">
+            <button id="signinButton">Sign In</button>
+            <span style="font-size: 28px; margin-top: 10px;">or</span>
+            <p class="otherPageLink">
+                Don't have an account then
+                <button id="signupLink">Sign Up</button>
+            </p>
+        </div>
+        <div id="mainMenu" style="display: none;">
+            <button id="playButton">PLAY</button>
+            <button id="leaderboardButton">Leaderboard</button>
+            <button id="shopButton">Shop</button>
+            <button id="signOutButton">Sign Out</button>
+        </div>
+        <div id="leaderboardMenu" style="display: none;">
+            <p class="menuHeading">
+                Leaderboard
+            </p>
+            <div id="leaderboardList">
+
+            </div>
+            <button id="leaderboardBackButton">Back</button>
+        </div>
+        <div id="shopMenu" style="display: none;">
+            <p class="menuHeading">
+                Shop
+            </p>
+            <p id="shopCreditsText">
+                You have <span id="shopCredits">0</span> credits
+            </p>
+            <div id="shopList">
+
+            </div>
+            <p>
+                Select a bird skin to equip it
+            </p>
+            <div id="birdsList">
+
+            </div>
+            <button id="shopBackButton">Back</button>
+        </div>
+    </div>
+
+    <script type="module" src="./src/scripts/main.js"></script>
+</body>
+
+</html>
